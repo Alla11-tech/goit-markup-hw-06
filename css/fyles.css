@@ -79,75 +79,24 @@ a {
   margin: 0 auto;
 }
 
-/* ===== Tablet (≥768px) ===== */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-/* ===== Desktop (≥1158px) ===== */
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
-}
-
 .section {
   padding: 96px 0;
 }
 
-/* ===== Desktop (≥1158px) ===== */
-@media screen and (min-width: 1158px) {
-  .section {
-    padding: 120px 0;
-  }
-}
-
-.mobile-menu-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.mobile-menu-icon {
-  stroke: var(--main-color);
-  display: block;
-}
-
-/* ===== Tablet ===== */
-@media screen and (min-width: 768px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-}
-
-/* ===== Desktop ===== */
-@media screen and (min-width: 1158px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-}
-
+/* Header базові стилі */
 .header {
-  border-bottom: 1px solid #e7e9fc; /* B13 - нижня рамка хедера */
+  border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
-  display: flex; /* B10 - Flexbox для горизонтального розташування */
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
+/* Logo - базові стилі для мобільного */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -156,15 +105,33 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
+  /* Без margin-right на мобільному */
 }
 
 .logo-accent {
   color: #2e2f42;
 }
 
+/* Мобільне меню - показується тільки на мобільному */
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu-icon {
+  stroke: #2e2f42;
+  display: block;
+}
+
+/* Навігація та адреса приховані на мобільному */
+.navigation {
+  display: none;
+}
+
 .nav-list {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   gap: 40px;
@@ -196,6 +163,7 @@ a {
   background-color: #404bbf;
   border-radius: 2px;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -203,10 +171,12 @@ a {
 
 .address {
   font-style: normal;
+  display: none; /* Прихована на мобільному */
 }
 
 .address-list {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   gap: 40px;
@@ -227,6 +197,75 @@ a {
   color: #404bbf;
 }
 
+/* ===== Tablet (≥768px) ===== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  /* Приховуємо мобільне меню */
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  /* Показуємо навігацію */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 120px; /* Менша відстань на планшеті */
+  }
+
+  /* Показуємо адресу у вертикальному вигляді */
+  .address {
+    display: block;
+  }
+
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    padding: 0; /* Убираємо padding на планшеті */
+  }
+}
+
+/* ===== Desktop (≥1158px) ===== */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  /* Повертаємо повну відстань для логотипа */
+  .logo {
+    margin-right: 76px;
+  }
+
+  /* Горизонтальна адреса на десктопі */
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0; /* Повертаємо padding */
+  }
+}
 /* Hero-section */
 .hero-section {
   background-color: #2e2f42;
