@@ -17,9 +17,16 @@
     <!-- ========== HEADER ========== -->
     <header class="header">
             <div class="header-container container">
-            <nav class="navigation">
                 <a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
-    
+
+                <!-- Burger -->
+        <button class="mobile-menu-btn" type="button">
+        <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#mobile-icon"></use>
+        </svg>
+        </button>
+        <div class="header-wrapper">
+            <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link current">Studio</a>
@@ -32,7 +39,6 @@
                     </li>
                 </ul>
             </nav>
-    
             <address class="address">
                 <ul class="address-list">
                     <li class="address-item">
@@ -43,7 +49,9 @@
                     </li>
                 </ul>
             </address>
+            </div>
          </div>
+
 </header>
 
 
@@ -495,6 +503,22 @@
                     <!-- Submit -->
                     <button type="submit" class="modal-form-btn">Send</button>
                 </form>
+            </div>
+        </div>
+
+        <!-- Мобільне меню -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu__inner">
+                <button class="menu-close" type="button" aria-label="Close menu"></button>
+                <ul class="mobile-nav">
+                    <li><a href="./index.html" class="mobile-nav-link current">Studio</a></li>
+                    <li><a href="" class="mobile-nav-link">Portfolio</a></li>
+                    <li><a href="" class="mobile-nav-link">Contacts</a></li>
+                </ul>
+                <ul class="mobile-contacts">
+                    <li><a href="tel:+110001111111" class="mobile-phone">+11 (000)111-11-11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="mobile-mail">info@devstudio.com</a></li>
+                </ul>
             </div>
         </div>
     </body>
