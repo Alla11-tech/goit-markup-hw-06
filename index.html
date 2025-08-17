@@ -507,18 +507,50 @@
         </div>
 
         <!-- Мобільне меню -->
-        <div class="mobile-menu" id="mobile-menu">
+        <!-- ===== Mobile Menu ===== -->
+        <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
             <div class="mobile-menu__inner">
-                <button class="menu-close" type="button" aria-label="Close menu"></button>
-                <ul class="mobile-nav">
-                    <li><a href="./index.html" class="mobile-nav-link current">Studio</a></li>
-                    <li><a href="" class="mobile-nav-link">Portfolio</a></li>
-                    <li><a href="" class="mobile-nav-link">Contacts</a></li>
-                </ul>
-                <ul class="mobile-contacts">
-                    <li><a href="tel:+110001111111" class="mobile-phone">+11 (000)111-11-11</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="mobile-mail">info@devstudio.com</a></li>
-                </ul>
+                <button class="mobile-menu__close" aria-label="Close menu">
+                    <svg class="mobile-menu__icon-close" width="8" height="8" aria-hidden="true">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+        
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link current" href="./index.html">Studio</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="./contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+        
+                <div class="mobile-contacts">
+                    <a class="mobile-contacts__tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        
+                    <ul class="mobile-socials">
+                        <li><a class="mobile-socials__link" href="#" aria-label="instagram">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li><a class="mobile-socials__link" href="#" aria-label="twitter">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li><a class="mobile-socials__link" href="#" aria-label="facebook">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li><a class="mobile-socials__link" href="#" aria-label="linkedin">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
