@@ -127,11 +127,11 @@
 
         <!-- Секція №3 -->
         <section class="team-section section">
-            <div class="container">
+            <div class="container team-container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img srcset="./images/team/team-1-min.jpg 1x, ./images/team/team-1-min@2min.jpg 2x "   src="./images/team/team-1-min.jpg" alt="Mark Guerrero" width="264">
+                        <img srcset="./images/team/team-1-min.jpg 1x, ./images/team/team-1@2x-min.jpg 2x "   src="./images/team/team-1-min.jpg" alt="Mark Guerrero" width="264">
                         <div class="team-content">
                             <h3 class="team-name">Mark Guerrero</h3>
                             <p class="team-position">Product Designer</p>
@@ -164,7 +164,7 @@
                     </div>
                      </li>
                     <li class="team-item">
-                        <img srcset="./images/team/team-2-min.jpg 1x, ./images/team/team-2-min@2min.jpg 2x"     src="./images/team/team-2-min.jpg" alt="Tom Ford" width="264">
+                        <img srcset="./images/team/team-2-min.jpg 1x, ./images/team/team-2@2x-min.jpg 2x"     src="./images/team/team-2-min.jpg" alt="Tom Ford" width="264">
                         <div class="team-content">
                             <h3 class="team-name">Tom Ford</h3>
                             <p class="team-position">Frontend Developer</p>
@@ -197,7 +197,7 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img srcset="./images/team/team-3-min.jpg 1x, ./images/team/team-3-min@2min.jpg 2x"  src="./images/team/team-3-min.jpg" alt="Camila Garcia" width="264">
+                        <img srcset="./images/team/team-3-min.jpg 1x, ./images/team/team-3@2x-min.jpg 2x"  src="./images/team/team-3-min.jpg" alt="Camila Garcia" width="264">
                         <div class="team-content">
                             <h3 class="team-name">Camila Garcia</h3>
                             <p class="team-position">Marketing</p>
@@ -231,7 +231,7 @@
                     </div>
                     </li>
                     <li class="team-item">
-                        <img srcset="./images/team/team-4-min.jpg 1x, ./images/team/team-4-min@2min.jpg 2x" src="./images/team/team-4-min.jpg" alt="Daniel Wilson" width="264">
+                        <img srcset="./images/team/team-4-min.jpg 1x, ./images/team/team-4@2x-min.jpg 2x" src="./images/team/team-4-min.jpg" alt="Daniel Wilson" width="264">
                         <div class="team-content">
                             <h3 class="team-name">Daniel Wilson</h3>
                             <p class="team-position">UI Designer</p>
@@ -275,6 +275,22 @@
         
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
+                        <picture>
+                            <source 
+                            media="( min.width: 1158px)" 
+                            srcset="./images/retina/desk/banking-app-min.jpg 1x, 
+                            ./images/retina/desk/banking-app@2x-min.jpg 2x" />
+                            <source 
+                            media="( min.width: 768px)" 
+                            srcset="./images/retina/tablet/banking-app-min.jpg 1x , 
+                            ./images/retina/tablet/banking-app@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/banking-app-min.jpg 1x, 
+                            ./images/retina/mobile/banking-app@2x-min.jpg 2x" />
+                        
+                            <img src="./images/retina/mobile/banking-app-min.jpg" alt="Cashless Payment preview" width="360">
+                        </picture>
                         <div class="portfolio-image-wrapper">
                         <img src="./images/banking-app.jpg" alt="Banking App preview" width="360">
                         <p class="portfolio-overlay">
@@ -291,19 +307,22 @@
         
                     <li class="portfolio-item">
                         <picture>
-                            <source media="( min.width: 1158px)" 
-                            srcset="./images/retina/desk/banking-app-min.jpg 1x, 
-                            ./images/retina/desk/banking-app@2x-min.jpg 2x"
+                            <source 
+                            media="( min.width: 1158px)" 
+                            srcset="./images/retina/desk/cashless-payment-min.jpg 1x, 
+                            ./images/retina/desk/cashless-payment@2x-min.jpg 2x"
                             />
-                            <source media="( min.width: 768px)" 
-                            srcset="./images/retina/tablet/banking-app-min.jpg 1x , 
-                            ./images/retina/tablet/banking-app@2x-min.jpg 2x" 
+                            <source 
+                            media="( min.width: 768px)" 
+                            srcset="./images/retina/tablet/cashless-payment-min.jpg 1x , 
+                            ./images/retina/tablet/cashless-payment@2x-min.jpg 2x" 
                             />
-                            <source media="( max.width: 767px)" 
-                            srcset="./images/retina/mob/banking-app-min.jpg 1x, 
-                            ./images/retina/mob/banking-app@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/cashless-payment-min.jpg 1x, 
+                            ./images/retina/mobile/cashless-payment@2x-min.jpg 2x" />
 
-                            <img src="./images/retina/desk/banking-app-min.jpg" alt="Cashless Payment preview" width="360">
+                            <img src="./images/retina/desk/cashless-payment-min.jpg" alt="Cashless Payment preview" width="360">
                         </picture>
                         <div class="portfolio-image-wrapper">
                            <p class="portfolio-overlay">
@@ -320,15 +339,18 @@
                     <li class="portfolio-item">
 
                         <picture>
-                            <source media="( min.width: 1158px)" 
+                            <source 
+                            media="( min.width: 1158px)" 
                             srcset="./images/retina/desk/meditation-app-min.jpg 1x, 
                             ./images/retina/desk/meditation-app@2x-min.jpg 2x" />
-                            <source media="( min.width: 768px)"
+                            <source 
+                            media="( min.width: 768px)"
                             srcset="./images/retina/tablet/meditation-app-min.jpg 1x , 
                             ./images/retina/tablet/meditation-app@2x-min.jpg 2x" />
-                            <source media="( max.width: 767px)" 
-                            srcset="./images/retina/mob/meditation-app-min.jpg 1x, 
-                            ./images/retina/mob/meditation-app@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/meditation-app-min.jpg 1x, 
+                            ./images/retina/mobile/meditation-app@2x-min.jpg 2x" />
                         
                             <img src="./images/retina/desk/meditation-app-min.jpg" alt="Meditation App preview" width="360">
                         </picture>
@@ -347,17 +369,20 @@
                     <li class="portfolio-item">
 
                         <picture>
-                            <source media="( min.width: 1158px)" 
+                            <source 
+                            media="( min.width: 1158px)" 
                             srcset="./images/retina/desk/taxi-service-min.jpg 1x, 
                             ./images/retina/desk/taxi-service@2x-min.jpg 2x" />
-                            <source media="( min.width: 768px)" 
+                            <source 
+                            media="( min.width: 768px)" 
                             srcset="./images/retina/tablet/taxi-service-min.jpg 1x , 
                             ./images/retina/tablet/taxi-service@2x-min.jpg 2x" />
-                            <source media="( max.width: 767px)" 
-                            srcset="./images/retina/mob/taxi-service-min.jpg 1x, 
-                            ./images/retina/mob/taxi-service@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/taxi-service-min.jpg 1x, 
+                            ./images/retina/mobile/taxi-service@2x-min.jpg 2x" />
                         
-                            <img src="./images/retina/desk/taxi-service-min.jpg" alt="Taxi Service preview" width="360">
+                            <img src="./images/retina/mobile/taxi-service-min.jpg" alt="Taxi Service preview" width="360">
                         </picture>
                         <div class="portfolio-image-wrapper">
                         
@@ -375,17 +400,20 @@
                     <li class="portfolio-item">
 
                         <picture>
-                            <source media="( min.width: 1158px)" 
+                            <source 
+                            media="( min.width: 1158px)" 
                             srcset="./images/retina/desk/screen-illustrations-min.jpg 1x, 
                             ./images/retina/desk/screen-illustrations@2x-min.jpg 2x" />
-                            <source media="( min.width: 768px)" 
+                            <source 
+                            media="( min.width: 768px)" 
                             srcset="./images/retina/tablet/screen-illustrations-min.jpg 1x , 
                             ./images/retina/tablet/screen-illustrations@2x-min.jpg 2x" />
-                            <source media="( max.width: 767px)" 
-                            srcset="./images/retina/mob/screen-illustrations-min.jpg 1x, 
-                            ./images/retina/mob/screen-illustrations@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/screen-illustrations-min.jpg 1x, 
+                            ./images/retina/mobile/screen-illustrations@2x-min.jpg 2x" />
                         
-                            <img src="./images/retina/desk/screen-illustrations-min.jpg" alt="Screen Illustrations preview" width="360">
+                            <img src="./images/retina/mobile/screen-illustrations-min.jpg" alt="Screen Illustrations preview" width="360">
                         </picture>
                         <div class="portfolio-image-wrapper">
                         
@@ -403,17 +431,20 @@
                     <li class="portfolio-item">
 
                         <picture>
-                            <source media="( min.width: 1158px)" 
+                            <source 
+                            media="( min.width: 1158px)" 
                             srcset="./images/retina/desk/online-courses-min.jpg 1x, 
                             ./images/retina/desk/online-courses@2x-min.jpg 2x" />
-                            <source media="( min.width: 768px)" 
+                            <source 
+                            media="( min.width: 768px)" 
                             srcset="./images/retina/tablet/online-courses-min.jpg 1x , 
                             ./images/retina/tablet/online-courses@2x-min.jpg 2x" />
-                            <source media="( max.width: 767px)" 
-                            srcset="./images/retina/mob/online-courses-min.jpg 1x, 
-                            ./images/retina/mob/online-courses@2x-min.jpg 2x" />
+                            <source 
+                            media="( max.width: 767px)" 
+                            srcset="./images/retina/mobile/online-courses-min.jpg 1x, 
+                            ./images/retina/mobile/online-courses@2x-min.jpg 2x" />
                         
-                            <img src="./images/retina/desk/online-courses-min.jpg" alt="Online Courses preview" width="360">
+                            <img src="./images/retina/mobile/online-courses-min.jpg" alt="Online Courses preview" width="360">
                         </picture>
                         <div class="portfolio-image-wrapper">
                         
