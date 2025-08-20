@@ -1366,7 +1366,7 @@ a {
   transform: translateX(0);
 }
 
-.container .mobile-menu__inner {
+.mobile-menu__inner {
   height: 100%;
   display: flex;
   flex-direction: column;
