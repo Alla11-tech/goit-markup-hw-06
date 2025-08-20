@@ -1457,10 +1457,10 @@ mobile-link:focus {
 .mobile-socials {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  flex-direction: row;
 }
 
 .mobile-socials__link {
