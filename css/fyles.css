@@ -1308,23 +1308,6 @@ a {
 }
 
 /* ===== Submit Button ===== */
-.modal-form-btn {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  margin: 0 auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: var(--iris);
-  border: none;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal-form-btn:hover,
 .modal-form-btn:focus {
